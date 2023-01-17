@@ -48,9 +48,51 @@ print(xstr)
 # If the value is not found, the find() method returns -1, but the index() method will raise an exception:
 txtf = "Hello, welcome to my world."
 xf = txtf.find("welcome")  # first matched character
-xf1 = txtf.index("q")  # first matched character
+# xf1 = txtf.index("q")  # first matched character
 print(xf)
-print(xf1)
+# print(xf1)
 
 
-# format()
+# isalnum()
+txtIsl = "12e"
+print(txtIsl.isalnum())  # check all the character in the string is number
+print(txtIsl.isalpha())  # check all the character in the string is word
+print(txtIsl.isdecimal())  # check all the character in the string is in 10 base
+print(txtIsl.isdigit())  # Check if all the characters in the text are digits
+
+
+# isidentifier()
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
+
+print(a.isidentifier())  # True
+print(b.isidentifier())  # True
+print(c.isidentifier())  # False
+print(d.isidentifier())  # False
+
+
+# islower()
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
+
+print(a.islower())  # False
+print(b.islower())  # True
+print(c.islower())  # False
+
+
+# isTitle()
+txt = "Hello, And Welcome To My World!"
+x = txt.istitle()  # Check if each word start with an upper case letter.
+print(x)
+
+
+# isupper()
+txt = "THIS IS NOW!"
+x = txt.isupper() # Check if all the characters in the text are in upper case
+print(x)
+
+
+# join()
