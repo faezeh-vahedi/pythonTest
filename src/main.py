@@ -20,3 +20,15 @@ while i < 6:
 for x in range(2, 30, 3):
     print(x)  # loop 2 to 30 with 3 steps
 
+# change global value
+x = 300
+
+
+def myfunc():
+    global x
+    x = 200
+
+
+myfunc()
+
+print(x)
