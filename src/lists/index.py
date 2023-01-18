@@ -58,6 +58,14 @@ thislist.extend(thistuple)
 print(thislist)
 
 
+
+# join lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+
+
 # remove
 thislist = ["apple", "banana", "cherry"]
 thislist.remove("banana")
@@ -127,8 +135,11 @@ print(thislist)
 
 # nearby
 ''' Sort the list based on how close the number is to 50 '''
+
+
 def myfunc(n):
     return abs(n - 50)
+
 
 thislist = [100, 50, 65, 82, 23]
 thislist.sort(key=myfunc)
@@ -137,22 +148,25 @@ print(thislist)
 
 # case insensitive
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
-thislist.sort(key = str.lower)
+thislist.sort(key=str.lower)
 print(thislist)
 
 
-
-
-
-
-
-
-
-# so important copy list!
-
+# ! copy list
 '''
 ! You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+? Another way to make a copy is to use the built-in method list().
 '''
 thislist = ["apple", "banana", "cherry"]
 mylist = thislist.copy()
 print(mylist)
+
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+
+
+
+
+
