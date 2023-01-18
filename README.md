@@ -25,6 +25,15 @@ In this route you can learn:
     <li>unpack collection</li>
 </ul>
 
+We have 4 built-in data type in python:
+
+<ol>
+<li>Tuple</li>
+<li>Set</li>
+<li>Dic</li>
+<li>List</li>
+</ol>
+
 ## Part.2
 
 start learning file handling.
